@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Ilyasa Ramadhany  Full Stack Developer. Membangun aplikasi web modern, skalabel, dan responsif dengan antarmuka bersih dan pengalaman pengguna futuristik.">
+  <meta name="keywords"
+    content="Ilyasa Ramadhany, yasaramdh, Full Stack Developer, Web Developer, Laravel, Bootstrap, JavaScript, PHP, Portfolio, Tangerang">
+  <meta name="author" content="Ilyasa Ramadhany">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="yasaramdh | Full Stack Developer Portfolio">
+  <meta property="og:description"
+    content="Full Stack Developer yang membangun aplikasi web modern dengan antarmuka bersih dan pengalaman futuristik.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ilyasaramadhany.my.id">
+  <meta property="og:image" content="assets/img/bts-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>yasaramdh | Portfolio</title>
+
+    <!--Favicon-->
+  <link rel="icon" type="image/jpeg" href="assets/icons/favicon_yr.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Ads Meta-->
+  <meta name="google-adsense-account" content="ca-pub-4270350970153100">
+
+  <!--Google Ads-->
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+
+  <!--Google Search-->
+  <meta name="google-site-verification" content="wo3xWBmhNS30y8zAuX06gkqOCtQbYNdqz15dmLyK0Y8" />
+
+</head>
+
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     PRELOADER
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <div id="preloader">
+    <div class="preloader-logo">yasa<span>ramdh</span></div>
+    <div class="preloader-bar-track">
+      <div class="preloader-bar-fill"></div>
+    </div>
+    <div class="preloader-percent">0%</div>
+  </div>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     NAVBAR
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#home">yasa<span>ramdh</span></a>
+
+      <!-- Mobile toggles -->
+      <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+        <button class="nav-toggle-btn" id="themeToggleMobile">
+          <i class="bi bi-moon-stars" id="themeIconMobile"></i>
+        </button>
+        <button class="nav-toggle-btn" id="langToggleMobile">
+          <span id="langLabelMobile">EN</span>
+        </button>
+      </div>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-expanded="false">
+        <span style="display:flex;flex-direction:column;justify-content:space-between;width:20px;height:16px;">
+          <span style="display:block;width:100%;height:1.5px;background:var(--text);border-radius:2px;"></span>
+          <span style="display:block;width:100%;height:1.5px;background:var(--text);border-radius:2px;"></span>
+          <span style="display:block;width:100%;height:1.5px;background:var(--text);border-radius:2px;"></span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+            <li class="nav-item"><a class="nav-link active" href="#home" title="Home"><i class="bi bi-house-door-fill" aria-hidden="true"></i><span data-lang-en="Home"
+              data-lang-id="Beranda">Home</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" title="About"><i class="bi bi-person-fill" aria-hidden="true"></i><span data-lang-en="About" data-lang-id="Tentang">About</span></a>
+          </li>
+            <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i><span data-lang-en="Skills"
+              data-lang-id="Keahlian">Skills</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" title="Projects"><i class="bi bi-grid-fill" aria-hidden="true"></i><span data-lang-en="Projects"
+              data-lang-id="Proyek">Projects</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><i class="bi bi-briefcase-fill" aria-hidden="true"></i><span data-lang-en="Experience"
+              data-lang-id="Pengalaman">Experience</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificates" title="Certificates"><i class="bi bi-award-fill" aria-hidden="true"></i><span data-lang-en="Certificates"
+              data-lang-id="Sertifikat">Certificates</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><i class="bi bi-envelope-fill" aria-hidden="true"></i><span data-lang-en="Contact"
+              data-lang-id="Kontak">Contact</span></a></li>
+        </ul>
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <button class="nav-toggle-btn" id="themeToggle">
+            <i class="bi bi-moon-stars" id="themeIcon"></i>
+            <span id="themeLabel">Dark</span>
+          </button>
+          <button class="nav-toggle-btn" id="langToggle">
+            <i class="bi bi-translate"></i>
+            <span id="langLabel">EN</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     HERO
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="home">
+    <div class="container position-relative z-1">
+      <div class="row align-items-center gy-5">
+
+        <!-- Left -->
+        <div class="col-lg-6">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-line"></span>
+            <span data-lang-en="Welcome to my portfolio" data-lang-id="Selamat datang di portofolio saya">Welcome to my portfolio</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-lang-en="Hi, I'm" data-lang-id="Halo, Saya">Hi, I'm</span><br>
+            <span class="name-highlight">Ilyasa Ramadhany</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span data-lang-en="Full Stack Developer &middot; Tech Enthusiast &middot; Public Speaker"
+              data-lang-id="Full Stack Developer &middot; Penggemar Teknologi &middot; Pembicara Publik">
+              Full Stack Developer &middot; Tech Enthusiast &middot; Public Speaker
+            </span>
+          </p>
+
+          <p class="hero-desc">
+            <span
+              data-lang-en="I build modern, scalable, and responsive web applications with clean UI, strong backend logic, and a futuristic user experience."
+              data-lang-id="Saya membangun aplikasi web modern, skalabel, dan responsif dengan antarmuka yang bersih, logika backend yang kuat, dan pengalaman pengguna yang futuristik.">
+              I build modern, scalable, and responsive web applications with clean UI, strong backend logic, and a
+              futuristic user experience.
+            </span>
+          </p>
+
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary">
+              <i class="bi bi-arrow-right"></i>
+              <span data-lang-en="View Projects" data-lang-id="Lihat Proyek">View Projects</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span data-lang-en="Contact Me" data-lang-id="Hubungi Saya">Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="mailto:yasaramdh@gmail.com" class="social-btn" title="Email"><i
+                class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.linkedin.com/in/ilyasa-ramadhany-a26942252/" target="_blank" class="social-btn"
+              title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/yasaramdh_/" target="_blank" class="social-btn" title="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://github.com/yasaramdh07" target="_blank" class="social-btn" title="GitHub"><i
+                class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-lg-6">
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-frame">
+              <img src="cv/cv.png" alt="Ilyasa Ramadhany">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     ABOUT
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center gy-5 gx-lg-5">
+
+        <!-- Left: Image -->
+        <div class="col-lg-5 reveal-left">
+          <div class="about-image-wrap">
+            <div class="about-deco"></div>
+            <div class="about-img-frame">
+              <img src="assets/img/about.jpg"
+                alt="Ilyasa Ramadhany  About">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-lg-7 reveal-right">
+          <div class="section-label" data-lang-en="About Me" data-lang-id="Tentang Saya">About Me</div>
+          <h2 class="section-title">
+            <span  data-lang-en="Building Modern Web" data-lang-id="Membangun Pengalaman Web">Building
+              Modern Web</span><br>
+            <span data-lang-en="Experiences with Clean Code" data-lang-id="Modern dengan Kode Bersih">Experiences with
+              Clean Code</span>
+          </h2>
+
+          <p class="about-text">
+            <span
+              data-lang-en="I am a <strong>Full Stack Developer</strong> with a passion for building responsive, scalable, and high-performance web applications. I work extensively with <strong>Laravel</strong>, modern UI frameworks, and craft digital solutions that address real-world problems."
+              data-lang-id="Saya adalah seorang <strong>Full Stack Developer</strong> yang berdedikasi dalam membangun aplikasi web yang responsif, skalabel, dan berperforma tinggi. Saya bekerja secara mendalam dengan <strong>Laravel</strong>, framework UI modern, serta merancang solusi digital yang menjawab permasalahan nyata.">
+              I am a <strong>Full Stack Developer</strong> with a passion for building responsive, scalable, and
+              high-performance web applications.
+            </span>
+          </p>
+          <p class="about-text" style="margin-top:-0.75rem;">
+            <span
+              data-lang-en="I also possess solid experience in <strong>leadership and organizational management</strong>, particularly in event planning, team coordination, and executing projects with measurable impact."
+              data-lang-id="Saya juga memiliki pengalaman yang kuat dalam <strong>kepemimpinan dan manajemen organisasi</strong>, khususnya dalam perencanaan acara, koordinasi tim, dan pelaksanaan proyek yang memberikan dampak nyata.">
+              I also possess solid experience in <strong>leadership and organizational management</strong>, particularly
+              in event planning, team coordination, and executing projects with measurable impact.
+            </span>
+          </p>
+
+          <!-- Info grid -->
+          <div class="about-info-list">
+            <div class="about-info-item">
+              <i class="bi bi-person-fill"></i>
+              <div><small data-lang-en="Full Name" data-lang-id="Nama Lengkap">Full Name</small><span>Ilyasa
+                  Ramadhany</span></div>
+            </div>
+            <div class="about-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div><small data-lang-en="Location" data-lang-id="Lokasi">Location</small><span>Tangerang,
+                  Indonesia</span></div>
+            </div>
+            <div class="about-info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div><small>Email</small><span>yasaramdh@gmail.com</span></div>
+            </div>
+            <div class="about-info-item">
+              <i class="bi bi-briefcase-fill"></i>
+              <div>
+                <small data-lang-en="Availability" data-lang-id="Ketersediaan">Availability</small>
+                <span data-lang-en="Open to Work" data-lang-id="Siap Berkolaborasi">Open to Work</span>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="bi bi-mortarboard-fill"></i>
+              <div>
+                <small data-lang-en="Education" data-lang-id="Pendidikan">Education</small>
+                <span>Universitas Pamulang</span>
+                <small data-lang-en="Informatics Engineering Student" data-lang-id="Mahasiswa Teknik Informatika">Informatics Engineering Student</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech chips -->
+          <div class="about-chips">
+            <span class="about-chip">Laravel</span>
+            <span class="about-chip">JavaScript</span>
+            <span class="about-chip">Bootstrap</span>
+            <span class="about-chip">MySQL</span>
+            <span class="about-chip">PHP</span>
+            <span class="about-chip">Figma</span>
+            <span class="about-chip">GitHub</span>
+            <span class="about-chip">Arduino</span>
+          </div>
+
+          <!-- Stats -->
+          <div class="about-stats">
+            <div class="about-stat-item">
+              <div class="about-stat-num">10+</div>
+              <div class="about-stat-label" data-lang-en="Projects" data-lang-id="Proyek">Projects</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="about-stat-num">2+</div>
+              <div class="about-stat-label" data-lang-en="Yrs. Exp." data-lang-id="Thn. Pengalaman">Yrs. Exp.</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="about-stat-num">5+</div>
+              <div class="about-stat-label" data-lang-en="Organizations" data-lang-id="Organisasi">Organizations</div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary">
+              <i class="bi bi-person-check-fill"></i>
+              <span data-lang-en="Hire Me" data-lang-id="Rekrut Saya">Hire Me</span>
+            </a>
+            <a href="cv/cvilyasa.html" target="_blank"
+              class="btn-secondary">
+              <i class="bi bi-download"></i>
+              <span data-lang-en="Download CV" data-lang-id="Unduh CV">Download CV</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SKILLS
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="text-center reveal">
+        <div class="section-eyebrow justify-content-center" data-lang-en="Skills & Tools"
+          data-lang-id="Keahlian & Alat">Skills & Tools</div>
+        <h2 class="section-title">
+          <span  data-lang-en="Technologies I Use to Build"
+            data-lang-id="Teknologi yang Saya Gunakan">Technologies I Use to Build</span><br>
+          <span data-lang-en="Modern Web Products" data-lang-id="untuk Membangun Produk Web Modern">Modern Web
+            Products</span>
+        </h2>
+        <p class="section-sub"
+          data-lang-en="I focus on clean UI, scalable backend architecture, and modern development tooling to deliver professional-grade web solutions."
+          data-lang-id="Saya berfokus pada antarmuka yang bersih, arsitektur backend yang skalabel, dan tooling pengembangan modern untuk menghadirkan solusi web tingkat profesional.">
+          I focus on clean UI, scalable backend architecture, and modern development tooling to deliver
+          professional-grade web solutions.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="d-flex flex-wrap gap-2 justify-content-center skill-filters mb-5 reveal">
+        <button class="filter-btn active" data-filter="all"><i class="bi bi-grid-3x3-gap-fill"></i><span
+            data-lang-en="All" data-lang-id="Semua">All</span></button>
+        <button class="filter-btn" data-filter="frontend"><i class="bi bi-layout-text-window"></i> Frontend</button>
+        <button class="filter-btn" data-filter="backend"><i class="bi bi-server"></i> Backend</button>
+        <button class="filter-btn" data-filter="tools"><i class="bi bi-tools"></i> Tools</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Frontend -->
+        <div class="skill-card" data-cat="frontend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path d="M2 4l2.5 25L16 32l11.5-3L30 4z" fill="#E44D26" />
+              <path d="M16 29.5l9.3-2.6 2.1-21.1H16z" fill="#F16529" />
+              <path d="M16 13.5H11.2l-.3-3.5H16V6.5H7.3l.8 8.5H16zm0 9.3l-.1.1-3.8-1-.3-2.8H8.4l.5 5.8 7.1 2z"
+                fill="#fff" />
+              <path d="M16 13.5v3.5h4.5l-.4 4.3-4.1 1.1v3.6l7.1-2 .1-.6 1.1-12z" fill="#fff" />
+            </svg></div>
+          <div class="skill-name">HTML5</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="frontend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path d="M2 4l2.5 25L16 32l11.5-3L30 4z" fill="#1572B6" />
+              <path d="M16 29.5l9.3-2.6 2.1-21.1H16z" fill="#33A9DC" />
+              <path d="M16 13.5H11l.3 3.5H16V13.5zm0-7H7.3l.3 3.5H16V6.5zm0 16.3l-.1.1-3.8-1-.3-2.8H8.4l.5 5.8 7.1 2z"
+                fill="#fff" />
+              <path d="M16 13.5v3.5h4.2l-.4 4.3-3.8 1v3.6l7.1-2 .1-.6 1.1-12H16z" fill="#fff" />
+            </svg></div>
+          <div class="skill-name">CSS3</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="frontend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="3" fill="#F7DF1E" />
+              <path
+                d="M9 25.2l2.3-1.4c.4.8.8 1.4 1.7 1.4.9 0 1.4-.3 1.4-1.7V14h2.8v9.6c0 2.8-1.6 4.1-4 4.1-2.1 0-3.4-1.1-4.2-2.5zm9.3-.3l2.3-1.4c.6 1 1.3 1.7 2.7 1.7 1.1 0 1.8-.6 1.8-1.3 0-.9-.7-1.2-1.9-1.7l-.7-.3c-1.9-.8-3.1-1.8-3.1-3.9 0-1.9 1.5-3.4 3.8-3.4 1.6 0 2.8.6 3.6 2l-2.2 1.4c-.4-.8-1-1.1-1.8-1.1-.8 0-1.3.5-1.3 1.1 0 .8.5 1.1 1.7 1.6l.7.3c2.2.9 3.5 1.9 3.5 4.1 0 2.3-1.8 3.6-4.3 3.6-2.4 0-3.9-1.1-4.8-2.7z"
+                fill="#323330" />
+            </svg></div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="frontend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path d="M14.5 2.1L2 24h6.2l8.3-14.5L24.8 24H31L18.5 2.1a2.3 2.3 0 00-4 0z" fill="#7952B3" />
+            </svg></div>
+          <div class="skill-name">Bootstrap</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+          </div>
+        </div>
+        <!-- Backend -->
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path
+                d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm5.7 8.7c-.1.7-.8 4.2-1.1 5.6-.1.6-.4.8-.6.8-.5 0-1-.4-1.5-.8-.8-.6-2.7-2-3.3-2.4-.1-.1-.3-.3-.3-.5s.3-.5.6-.8c.4-.4 3.7-3.4 3.8-3.7.1-.1 0-.2-.1-.1-.1 0-4.4 2.9-6.2 4.1-.6.4-1.1.5-1.6.5-.5 0-1.5-.3-2.2-.6-.9-.3-1.6-.5-1.6-1.1 0-.3.4-.6 1.3-.9 4.9-2.1 8.2-3.5 9.9-4.2 1.4-.6 2.9-1.2 4-1.6.2-.1.4-.1.6-.1.2 0 .4.1.4.4z"
+                fill="#FF2D20" />
+            </svg></div>
+          <div class="skill-name">Laravel</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path
+                d="M16 2a14 14 0 100 28A14 14 0 0016 2zm.5 4.5c1.4 0 2.5 1.1 2.5 2.5S17.9 11.5 16.5 11.5 14 10.4 14 9s1.1-2.5 2.5-2.5zM10 24c-.7 0-1.3-.6-1.3-1.3 0-.5.3-.9.7-1.1V14c-.4-.2-.7-.6-.7-1.1 0-.7.6-1.3 1.3-1.3h5.5l-.1.3c-.2.7-.3 1.4-.3 2.1 0 2.8 1.4 5.2 3.6 6.7v.7c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.8a5 5 0 01-2-.7v4.5c.4.2.7.6.7 1.1 0 .7-.6 1.3-1.3 1.3H10z"
+                fill="#777BB4" />
+            </svg></div>
+          <div class="skill-name">PHP</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="backend">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path
+                d="M16 2C9 3 3 6.7 3 11.2v9.6C3 25.3 9 29 16 29s13-3.7 13-8.2v-9.6C29 6.7 23 3 16 3zm0 2c6.1 0 11 3.2 11 6.2S22.1 17.4 16 17.4 5 14.2 5 11.2 9.9 5 16 5zm0 12.4c6.1 0 11-2.6 11-5.8v3.6c0 3.1-4.9 5.8-11 5.8S5 18.3 5 15.2v-3.6c0 3.2 4.9 5.8 11 5.8zm0 5.8c-6.1 0-11-2.6-11-5.8v3.8c0 3.1 4.9 5.8 11 5.8s11-2.7 11-5.8v-3.8c0 3.2-4.9 5.8-11 5.8z"
+                fill="#4479A1" />
+            </svg></div>
+          <div class="skill-name">MySQL</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-card" data-cat="tools">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path
+                d="M29.5 13.5L18.5 2.5a1.7 1.7 0 00-2.4 0l-2.4 2.4 3.1 3.1a2 2 0 012.5 2.6l3 3a2 2 0 012.5 2.5 2 2 0 01-2 2 2 2 0 01-1.4-.6 2 2 0 01-.4-2.2l-2.8-2.8v7.3a2 2 0 011 1.7 2 2 0 01-2 2 2 2 0 01-2-2c0-.8.4-1.4 1-1.8v-7.4a2 2 0 01-1-1.7 2 2 0 01.4-1.2L13 8.6 2.5 19.1a1.7 1.7 0 000 2.4l11 11a1.7 1.7 0 002.4 0l13.6-13.6a1.7 1.7 0 000-2.4z"
+                fill="#F54D27" />
+            </svg></div>
+          <div class="skill-name">GitHub</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="tools">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2z" fill="#1ABCFE" />
+              <circle cx="16" cy="10" r="4" fill="#fff" />
+              <path d="M16 16c-3.3 0-6 1.8-6 4s2.7 4 6 4 6-1.8 6-4-2.7-4-6-4z" fill="#0ACF83" />
+              <path d="M10 10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z" fill="#FF7262" />
+              <path d="M22 10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z" fill="#A259FF" />
+            </svg></div>
+          <div class="skill-name">Figma</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="tools">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#00C7B7" />
+              <path d="M8 22l3-9 3 6 2-3 3 6H8z" fill="#fff" />
+            </svg></div>
+          <div class="skill-name">Netlify</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-cat="tools">
+          <div class="skill-logo"><svg viewBox="0 0 32 32">
+              <path d="M6 6h8v8H6zm12 0h8v8h-8zM6 18h8v8H6z" fill="none" stroke="#00979D" stroke-width="2.5"
+                stroke-linejoin="round" />
+              <circle cx="22" cy="22" r="4" fill="#00979D" />
+            </svg></div>
+          <div class="skill-name">Arduino</div>
+          <div class="skill-level-dot">
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot filled"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="skills-divider reveal"></div>
+
+      <!-- Progress bars -->
+      <div class="row reveal">
+        <div class="col-12 mb-3">
+          <p class="section-label" data-lang-en="Proficiency Level" data-lang-id="Tingkat Kemahiran">Proficiency Level
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-label"><span>HTML5</span><span>95%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="95"></div>
+          </div>
+          <div class="progress-label"><span>CSS3 / Bootstrap</span><span>90%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="90"></div>
+          </div>
+          <div class="progress-label"><span>JavaScript</span><span>80%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="80"></div>
+          </div>
+          <div class="progress-label"><span>Laravel</span><span>82%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="82"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress-label"><span>PHP</span><span>85%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+          <div class="progress-label"><span>MySQL</span><span>75%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="75"></div>
+          </div>
+          <div class="progress-label"><span>GitHub</span><span>80%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="80"></div>
+          </div>
+          <div class="progress-label"><span>Figma</span><span>70%</span></div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     PROJECTS
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="reveal">
+        <span class="section-label" data-lang-en="My Work" data-lang-id="Karya Saya">My Work</span>
+        <h2 class="section-title" data-lang-en="Featured Projects" data-lang-id="Proyek Unggulan">Featured Projects</h2>
+        <p class="section-desc"
+          data-lang-en="A selection of projects that demonstrate my capabilities."
+          data-lang-id="Sejumlah proyek yang mencerminkan kemampuan saya.">
+          A selection of projects that demonstrate my capabilities.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="d-flex flex-wrap gap-2 proj-filters reveal">
+        <button class="filter-btn active" data-filter="all"><span data-lang-en="All" data-lang-id="Semua">All</span></button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="laravel">Laravel</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+
+      <!-- Projects List -->
+      <div class="projects-list" id="projectsGrid">
+
+        <div class="proj-row" data-cat="web" data-project="rumusin">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/rumusin-apps.png" alt="Rumusin">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 01 &middot; Web App</div>
+            <div class="proj-row-title">Rumusin! &mdash; Physics Learning Web App</div>
+            <p class="proj-row-desc"
+              data-lang-en="A web-based physics calculator to help students understand and calculate formulas interactively."
+              data-lang-id="Kalkulator fisika berbasis web untuk membantu siswa memahami rumus fisika secara interaktif.">A web-based physics calculator to help students understand formulas interactively.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">HTML</span><span class="proj-row-tag">Bootstrap</span><span class="proj-row-tag">JavaScript</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="web" data-project="catetin">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/catetin-app.png" alt="Catetin">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 02 &middot; Web App</div>
+            <div class="proj-row-title">Catetin! &mdash; Personal Finance Tracker</div>
+            <p class="proj-row-desc"
+              data-lang-en="A personal finance tracking app to record income and expenses with clear transaction history."
+              data-lang-id="Aplikasi pencatat keuangan pribadi dengan riwayat transaksi yang jelas.">A personal finance app with transaction history and balance summary dashboard.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">JSON</span><span class="proj-row-tag">JavaScript</span><span class="proj-row-tag">Bootstrap</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="iot" data-project="rfid">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/rfid-apps.png" alt="RFID App">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 03 &middot; IoT &amp; NodeMCU</div>
+            <div class="proj-row-title">IoT RFID Absence App</div>
+            <p class="proj-row-desc"
+              data-lang-en="An Arduino-based RFID attendance system with LCD output and real-time user management."
+              data-lang-id="Sistem kehadiran berbasis RFID Arduino dengan output LCD dan manajemen pengguna real-time.">An Arduino-based RFID attendance system with LCD output and user management.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">NodeMCU</span><span class="proj-row-tag">Arduino</span><span class="proj-row-tag">RFID</span><span class="proj-row-tag">C++</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="laravel" data-project="replate">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/replate-apps.png" alt="Replate">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 04 &middot; Laravel</div>
+            <div class="proj-row-title">Replate &mdash; Food Waste Resale Platform</div>
+            <p class="proj-row-desc"
+              data-lang-en="A web-based platform helping restaurants and UMKM sell leftover food at a discount to reduce food waste."
+              data-lang-id="Platform berbasis web yang membantu restoran/UMKM menjual makanan sisa dengan harga lebih murah.">Helps restaurants and UMKM sell leftover food to reduce waste.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">Laravel</span><span class="proj-row-tag">PHP</span><span class="proj-row-tag">MySQL</span><span class="proj-row-tag">Bootstrap</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="web" data-project="lms">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/lms-apps.png" alt="LMS">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 05 &middot; Web App</div>
+            <div class="proj-row-title">Multimedia Class &mdash; Learning Management System</div>
+            <p class="proj-row-desc"
+              data-lang-en="Web-based LMS for the Multimedia extracurricular at YABIKA with attendance, grading, role-based access, and cloud storage."
+              data-lang-id="LMS berbasis web untuk Multimedia YABIKA dengan absensi, penilaian, akses berbasis peran, dan penyimpanan cloud.">LMS for YABIKA Multimedia extracurricular with attendance, grading, and role-based access.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">PHP</span><span class="proj-row-tag">SQLite</span><span class="proj-row-tag">Bootstrap</span><span class="proj-row-tag">E-Learning</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="web" data-project="ordio">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/ordio-apps.png" alt="Ordio">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 06 &middot; Web App</div>
+            <div class="proj-row-title">Ordio.io &mdash; Integrated Restaurant Management</div>
+            <p class="proj-row-desc"
+              data-lang-en="A modern restaurant management system with QR Code ordering, real-time cashier dashboard, and financial reporting."
+              data-lang-id="Sistem manajemen restoran modern dengan pemesanan QR Code, dashboard kasir real-time, dan laporan keuangan.">Modern restaurant management with QR Code ordering, real-time dashboard, and reporting.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">PHP</span><span class="proj-row-tag">SQLite</span><span class="proj-row-tag">Bootstrap</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="web" data-project="sms">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/sms-apps.png" alt="SMS">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 07 &middot; Web App</div>
+            <div class="proj-row-title">Stock Management System App</div>
+            <p class="proj-row-desc"
+              data-lang-en="Web-based inventory management with real-time stock tracking, product variants, low-stock alerts, and PDF/Excel reporting."
+              data-lang-id="Manajemen inventaris berbasis web dengan pelacakan stok real-time, variasi produk, peringatan stok rendah, dan laporan PDF/Excel.">Real-time inventory management with product variants, low-stock alerts, and reporting.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">PHP</span><span class="proj-row-tag">SQLite</span><span class="proj-row-tag">Bootstrap</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-cat="laravel" data-project="matchday">
+          <div class="proj-row-thumb">
+            <img src="assets/img/app/matchday-apps.png" alt="Matchday">
+          </div>
+          <div class="proj-row-body">
+            <div class="proj-row-num">Project 08 &middot; Laravel</div>
+            <div class="proj-row-title">Matchday &mdash; Live Match Control &amp; Broadcast Overlay</div>
+            <p class="proj-row-desc"
+              data-lang-en="A real-time match score control and broadcast overlay system for futsal, local leagues, tournaments, and OBS/vMix productions."
+              data-lang-id="Sistem kontrol skor pertandingan dan overlay broadcast real-time untuk futsal, liga lokal, turnamen, dan produksi siaran berbasis OBS/vMix.">A real-time match score control and broadcast overlay system for futsal, local leagues, tournaments, and OBS/vMix productions.</p>
+            <div class="proj-row-footer">
+              <div class="proj-row-tags"><span class="proj-row-tag">Laravel</span><span class="proj-row-tag">SQLite</span><span class="proj-row-tag">Real-time</span><span class="proj-row-tag">OBS / vMix</span></div>
+              <div class="proj-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card" id="modalCard">
+      <div class="modal-thumb">
+        <img id="modalThumbImg" src="" alt="">
+        <button class="modal-close" id="modalClose"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <span class="modal-cat" id="modalCat"></span>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-meta">
+          <div class="modal-meta-item"><label data-lang-en="Tech Stack" data-lang-id="Teknologi">Tech Stack</label><span
+              id="modalStack"></span></div>
+          <div class="modal-meta-item"><label data-lang-en="Category" data-lang-id="Kategori">Category</label><span
+              id="modalCategory"></span></div>
+        </div>
+        <div class="modal-features">
+          <h6 data-lang-en="Key Features" data-lang-id="Fitur Utama">Key Features</h6>
+          <div id="modalFeatures"></div>
+        </div>
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     EXPERIENCE
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="experience">
+    <div class="container">
+
+      <div class="text-center reveal">
+        <div class="section-eyebrow justify-content-center" data-lang-en="My Journey" data-lang-id="Perjalanan Saya">My
+          Journey</div>
+        <h2 class="section-title">
+          <span  data-lang-en="Experience &" data-lang-id="Pengalaman &">Experience &</span>
+          <span data-lang-en=" Organizations" data-lang-id=" Organisasi"> Organizations</span>
+        </h2>
+        <p class="section-sub"
+          data-lang-en="My professional journey, organizational roles, and leadership experience that have shaped my capabilities."
+          data-lang-id="Perjalanan profesional, peran organisasi, dan pengalaman kepemimpinan yang membentuk kompetensi saya.">
+          My professional journey, organizational roles, and leadership experience.
+        </p>
+      </div>
+
+      <!-- Tab switcher -->
+      <div class="d-flex justify-content-center reveal">
+        <div class="exp-tabs">
+          <button class="exp-tab active" data-tab="work"><i class="bi bi-briefcase-fill"></i><span
+              data-lang-en="Work & Projects" data-lang-id="Pekerjaan & Proyek">Work & Projects</span></button>
+          <button class="exp-tab" data-tab="org"><i class="bi bi-people-fill"></i><span data-lang-en="Organizations"
+              data-lang-id="Organisasi">Organizations</span></button>
+        </div>
+      </div>
+
+      <!-- Work Pane -->
+      <div class="timeline-pane active" id="pane-work">
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-current"><span class="tl-current-dot"></span><span data-lang-en="Currently Active"
+                  data-lang-id="Sedang Berjalan">Currently Active</span></div>
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Mentor Multimedia" data-lang-id="Mentor Multimedia">Mentor Multimedia
+                </div>
+                <span class="tl-period">2024  <span data-lang-en="Present"
+                    data-lang-id="Sekarang">Present</span></span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-camera-video-fill"></i></div>MA YABIKA
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Mentoring students in multimedia and digital creativity, including fundamental design principles, content creation, and website development. Supporting the school's digital initiatives and enhancing students' technical competencies."
+                data-lang-id="Membimbing siswa dalam bidang multimedia dan kreativitas digital, mencakup prinsip desain dasar, pembuatan konten, dan pengembangan website. Mendukung inisiatif digital sekolah serta meningkatkan kompetensi teknis siswa.">
+                Mentoring students in multimedia, digital creativity, design fundamentals, and website development.</p>
+              <div class="tl-tags"><span class="tl-tag">Mentoring</span><span class="tl-tag">Multimedia</span><span
+                  class="tl-tag">Web Dev</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-current"><span class="tl-current-dot"></span><span data-lang-en="Currently Active"
+                  data-lang-id="Sedang Berjalan">Currently Active</span></div>
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Freelance Web Developer" data-lang-id="Pengembang Web Lepas">
+                  Freelance Web Developer</div>
+                <span class="tl-period">2023  <span data-lang-en="Present"
+                    data-lang-id="Sekarang">Present</span></span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-laptop"></i></div><span
+                  data-lang-en="Independent / Various Clients" data-lang-id="Mandiri / Berbagai Klien">Independent /
+                  Various Clients</span>
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Developing responsive and modern websites for various clients including company profiles, business landing pages, and learning platforms using HTML, Bootstrap, JavaScript, and Laravel."
+                data-lang-id="Mengembangkan website responsif dan modern untuk berbagai klien termasuk profil perusahaan, halaman landing bisnis, dan platform pembelajaran menggunakan HTML, Bootstrap, JavaScript, dan Laravel.">
+                Developing responsive websites for various clients using modern web technologies.</p>
+              <div class="tl-tags"><span class="tl-tag">HTML</span><span class="tl-tag">Bootstrap</span><span
+                  class="tl-tag">Laravel</span><span class="tl-tag">JavaScript</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Founder  Rumusin" data-lang-id="Pendiri  Rumusin">Founder  Rumusin
+                </div>
+                <span class="tl-period">2024  <span data-lang-en="Present"
+                    data-lang-id="Sekarang">Present</span></span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-calculator"></i></div>Rumusin  EdTech Initiative
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Founded Rumusin as a creative and digital initiative in the technology and education space. Responsible for product planning, feature execution, and building digital products with a modern strategic approach."
+                data-lang-id="Mendirikan Rumusin sebagai inisiatif kreatif dan digital di bidang teknologi dan pendidikan. Bertanggung jawab atas perencanaan produk, eksekusi fitur, dan pengembangan produk digital dengan pendekatan strategis modern.">
+                Founded Rumusin as a technology and education digital initiative.</p>
+              <div class="tl-tags"><span class="tl-tag">Product Development</span><span
+                  class="tl-tag">EdTech</span><span class="tl-tag">Strategy</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Founder  SuraCode Studio" data-lang-id="Pendiri  SuraCode Studio">Founder  SuraCode Studio
+                </div>
+                <span class="tl-period">2025  <span data-lang-en="Present"
+                    data-lang-id="Sekarang">Present</span></span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-code"></i></div>SuraCode - Studio
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Founded SuraCode Studio as a creative and digital initiative in the technology and education space. Responsible for product planning, feature execution, and building digital products with a modern strategic approach."
+                data-lang-id="Mendirikan SuraCode Studio sebagai inisiatif kreatif dan digital di bidang teknologi dan pendidikan. Bertanggung jawab atas perencanaan produk, eksekusi fitur, dan pengembangan produk digital dengan pendekatan strategis modern.">
+                Founded SuraCode Studio as a technology and education digital initiative.</p>
+              <div class="tl-tags"><span class="tl-tag">Product Development</span><span
+                  class="tl-tag">EdTech</span><span class="tl-tag">Strategy</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Organization Pane -->
+      <div class="timeline-pane" id="pane-org">
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Chairman of Student Council" data-lang-id="Ketua OSIS">Chairman of
+                  Student Council</div>
+                <span class="tl-period">2 <span data-lang-en="Periods" data-lang-id="Periode">Periods</span></span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-building"></i></div>MA YABIKA
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Led the student council organization across two periods. Managed organizational programs, coordinated teams, and orchestrated school events while developing strong leadership and communication competencies."
+                data-lang-id="Memimpin organisasi OSIS selama dua periode. Mengelola program organisasi, mengkoordinasikan tim, dan menyelenggarakan berbagai acara sekolah sambil mengembangkan kompetensi kepemimpinan dan komunikasi yang kuat.">
+                Led the student council for two periods, managing programs, teams, and school events.</p>
+              <div class="tl-tags"><span class="tl-tag">Leadership</span><span class="tl-tag">Event
+                  Management</span><span class="tl-tag">Communication</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Coordinator  Department" data-lang-id="Koordinator Departemen">
+                  Coordinator  Department</div>
+                <span class="tl-period">2023  2024</span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-diagram-3-fill"></i></div>Forum OSIS Kabupaten Tangerang (FOKT)
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Responsible for regional coordination, event planning, inter-school communication, and ensuring the execution of programs across multiple institutions within Tangerang Regency."
+                data-lang-id="Bertanggung jawab atas koordinasi regional, perencanaan acara, komunikasi antar sekolah, dan memastikan pelaksanaan program di berbagai institusi dalam lingkup Kabupaten Tangerang.">
+                Responsible for regional coordination and program execution across schools in Tangerang.</p>
+              <div class="tl-tags"><span class="tl-tag">Regional Coordination</span><span class="tl-tag">Event
+                  Planning</span><span class="tl-tag">Communication</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div class="tl-role" data-lang-en="Active Member" data-lang-id="Anggota Aktif">Active Member</div>
+                <span class="tl-period">2023  2024</span>
+              </div>
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="bi bi-cpu-fill"></i></div>Indonesian Technology Developer
+                (IndoTechDev)
+              </div>
+              <p class="tl-desc"
+                data-lang-en="Actively engaged in technology community activities including networking, collaborative projects, and continuous skill development through real-world development initiatives."
+                data-lang-id="Terlibat aktif dalam kegiatan komunitas teknologi termasuk jejaring, proyek kolaboratif, dan pengembangan keterampilan berkelanjutan melalui inisiatif pengembangan nyata.">
+                Active participation in tech community networking, collaboration, and skill development.</p>
+              <div class="tl-tags"><span class="tl-tag">Tech Community</span><span class="tl-tag">Networking</span><span
+                  class="tl-tag">Collaboration</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     CERTIFICATES
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="certificates">
+    <div class="container">
+
+      <div class="reveal">
+        <span class="section-label" data-lang-en="Credentials" data-lang-id="Kredensial">Credentials</span>
+        <h2 class="section-title">
+          <span data-lang-en="Licenses & Certificates" data-lang-id="Lisensi & Sertifikat">Licenses & Certificates</span>
+        </h2>
+        <p class="section-desc"
+          data-lang-en="Certifications that validate my technical expertise."
+          data-lang-id="Sertifikasi yang memvalidasi keahlian teknis saya.">
+          Certifications that validate my technical expertise.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="d-flex flex-wrap gap-2 cert-filters reveal">
+        <button class="filter-btn active" data-filter="all"><span data-lang-en="All" data-lang-id="Semua">All</span></button>
+        <button class="filter-btn" data-filter="webdev">Web Dev</button>
+        <button class="filter-btn" data-filter="professional">Professional</button>
+      </div>
+
+      <!-- Certificates List -->
+      <div class="cert-list" id="certGrid">
+
+        <div class="cert-row" data-cat="webdev" data-cert="0">
+          <div class="cert-row-thumb">
+            <img src="assets/img/sertif/sertifikat-dca.jpg" alt="Web Development Certificate">
+          </div>
+          <div class="cert-row-body">
+            <div class="cert-row-cat" data-lang-en="Web Development" data-lang-id="Pengembangan Web">Web Development</div>
+            <div class="cert-row-name">Web Development Certificate</div>
+            <div class="cert-row-meta">
+              <span><i class="bi bi-building"></i> Dunia Coding Academy</span>
+            </div>
+          </div>
+          <div class="cert-row-year">2024</div>
+          <div class="cert-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        </div>
+
+        <div class="cert-row" data-cat="professional" data-cert="1">
+          <div class="cert-row-thumb">
+            <img src="assets/img/sertif/ketos-2425.jpg" alt="Leadership Achievement">
+          </div>
+          <div class="cert-row-body">
+            <div class="cert-row-cat" data-lang-en="Professional" data-lang-id="Profesional">Professional</div>
+            <div class="cert-row-name">Leadership Achievement &mdash; Ketua OSIS</div>
+            <div class="cert-row-meta">
+              <span><i class="bi bi-building"></i> OSIS MA YABIKA</span>
+            </div>
+          </div>
+          <div class="cert-row-year">2023</div>
+          <div class="cert-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        </div>
+
+        <div class="cert-row" data-cat="professional" data-cert="2">
+          <div class="cert-row-thumb">
+            <img src="assets/img/sertif/ilyas.png" alt="Regional Coordinator">
+          </div>
+          <div class="cert-row-body">
+            <div class="cert-row-cat" data-lang-en="Professional" data-lang-id="Profesional">Professional</div>
+            <div class="cert-row-name">Regional Coordinator &mdash; FOKT</div>
+            <div class="cert-row-meta">
+              <span><i class="bi bi-building"></i> Forum OSIS Kabupaten Tangerang</span>
+            </div>
+          </div>
+          <div class="cert-row-year">2024</div>
+          <div class="cert-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        </div>
+
+        <div class="cert-row" data-cat="professional" data-cert="3">
+          <div class="cert-row-thumb">
+            <img src="assets/img/sertif/man-1.jpg" alt="Public Speaker">
+          </div>
+          <div class="cert-row-body">
+            <div class="cert-row-cat" data-lang-en="Professional" data-lang-id="Profesional">Professional</div>
+            <div class="cert-row-name">Public Speaker Certificate</div>
+            <div class="cert-row-meta">
+              <span><i class="bi bi-building"></i> School Organizations</span>
+            </div>
+          </div>
+          <div class="cert-row-year">2024</div>
+          <div class="cert-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        </div>
+
+        <div class="cert-row" data-cat="professional" data-cert="4">
+          <div class="cert-row-thumb">
+            <img src="assets/img/sertif/serti-mm.png" alt="Mentor Multimedia">
+          </div>
+          <div class="cert-row-body">
+            <div class="cert-row-cat" data-lang-en="Professional" data-lang-id="Profesional">Professional</div>
+            <div class="cert-row-name">Mentor Multimedia &mdash; MA YABIKA</div>
+            <div class="cert-row-meta">
+              <span><i class="bi bi-building"></i> Yayasan Bina Insan Kamil</span>
+            </div>
+          </div>
+          <div class="cert-row-year">2024</div>
+          <div class="cert-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        </div>
+
+        <div class="cert-row" data-cat="webdev" data-cert="5">
+          <div class="cert-row-thumb">
+            <img src="assets/img/sertif/webinar-dca.jpg" alt="Product Manager Webinar">
+          </div>
+          <div class="cert-row-body">
+            <div class="cert-row-cat" data-lang-en="Web Development" data-lang-id="Pengembangan Web">Web Development</div>
+            <div class="cert-row-name">Webinar &mdash; How to be a Product Manager</div>
+            <div class="cert-row-meta">
+              <span><i class="bi bi-building"></i> Dunia Coding Academy</span>
+            </div>
+          </div>
+          <div class="cert-row-year">2024</div>
+          <div class="cert-row-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <div class="lightbox-img"><img id="lbImg" src="" alt="Certificate"></div>
+      <button class="lightbox-close" id="lbClose"><i class="bi bi-x-lg"></i></button>
+      <div class="lightbox-body">
+        <span class="lightbox-cat" id="lbCat"></span>
+        <div class="lightbox-title" id="lbTitle"></div>
+        <div class="lightbox-meta">
+          <div class="lightbox-meta-item"><label data-lang-en="Issued By" data-lang-id="Diterbitkan Oleh">Issued
+              By</label><span id="lbIssuer"></span></div>
+          <div class="lightbox-meta-item"><label data-lang-en="Year" data-lang-id="Tahun">Year</label><span
+              id="lbYear"></span></div>
+        </div>
+        <a href="#" id="lbBtn" target="_blank" class="btn-primary">
+          <i class="bi bi-box-arrow-up-right"></i>
+          <span data-lang-en="View Credential" data-lang-id="Lihat Kredensial">View Credential</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     CONTACT
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="text-center reveal">
+        <div class="section-eyebrow justify-content-center" data-lang-en="Get In Touch" data-lang-id="Hubungi Saya">Get
+          In Touch</div>
+        <h2 class="section-title">
+          <span  data-lang-en="Let's Work Together" data-lang-id="Mari Berkolaborasi">Let's Work
+            Together</span>
+        </h2>
+        <p class="section-sub"
+          data-lang-en="Feel free to reach out for collaboration, freelance projects, or professional opportunities. I am always open to discussing new ideas."
+          data-lang-id="Jangan ragu untuk menghubungi saya terkait kolaborasi, proyek lepas, atau peluang profesional. Saya selalu terbuka untuk mendiskusikan ide-ide baru.">
+          Feel free to reach out for collaboration, freelance projects, or professional opportunities.
+        </p>
+      </div>
+
+      <div class="row gy-4 align-items-start">
+
+        <!-- Left: Info -->
+        <div class="col-lg-5">
+          <div class="d-flex flex-column gap-3">
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">yasaramdh@gmail.com</div>
+                <div class="contact-info-sub" data-lang-en="Fastest response" data-lang-id="Respons tercepat">Fastest
+                  response</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <div class="contact-info-label">WhatsApp</div>
+                <div class="contact-info-value">+62 812-8348-474</div>
+                <div class="contact-info-sub" data-lang-en="Available 08.00 &ndash; 22.00 WIB"
+                  data-lang-id="Tersedia 08.00 &ndash; 22.00 WIB">Available 08.00 &ndash; 22.00 WIB</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <div class="contact-info-label" data-lang-en="Location" data-lang-id="Lokasi">Location</div>
+                <div class="contact-info-value">Tangerang, Banten</div>
+                <div class="contact-info-sub">Indonesia</div>
+              </div>
+            </div>
+
+            <div class="avail-card">
+              <div class="avail-header">
+                <span class="avail-dot"></span>
+                <span class="avail-title" data-lang-en="Open to Work" data-lang-id="Siap Berkolaborasi">Open to
+                  Work</span>
+              </div>
+              <p class="avail-desc"
+                data-lang-en="Currently available for freelance projects, collaborations, and full-time opportunities. Let's build something great together."
+                data-lang-id="Saat ini tersedia untuk proyek lepas, kolaborasi, dan peluang kerja penuh waktu. Mari wujudkan sesuatu yang luar biasa bersama.">
+                Currently available for freelance projects, collaborations, and full-time opportunities.
+              </p>
+            </div>
+
+            <div class="contact-socials">
+              <a href="mailto:yasaramdh@gmail.com" class="social-btn"><i class="bi bi-envelope-fill"></i></a>
+              <a href="https://www.linkedin.com/in/ilyasa-ramadhany-a26942252/" target="_blank" class="social-btn"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/yasaramdh_/" target="_blank" class="social-btn"><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://github.com/yasaramdh07" target="_blank" class="social-btn"><i class="bi bi-github"></i></a>
+              <a href="https://wa.me/6281283484747" target="_blank" class="social-btn"><i
+                  class="bi bi-whatsapp"></i></a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="col-lg-7">
+          <div class="contact-form-wrap">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label-custom" data-lang-en="Your Name" data-lang-id="Nama Anda">Your Name</label>
+                <div class="input-icon-wrap">
+                  <i class="bi bi-person input-icon"></i>
+                  <input type="text" id="contactName" class="form-control-custom" placeholder="John Doe"
+                    data-placeholder-en="John Doe" data-placeholder-id="Budi Santoso">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label-custom" data-lang-en="Your Email" data-lang-id="Email Anda">Your Email</label>
+                <div class="input-icon-wrap">
+                  <i class="bi bi-envelope input-icon"></i>
+                  <input type="email" id="contactEmail" class="form-control-custom" placeholder="john@email.com"
+                    data-placeholder-en="john@email.com" data-placeholder-id="budi@email.com">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-custom" data-lang-en="Subject" data-lang-id="Subjek">Subject</label>
+              <div class="input-icon-wrap">
+                <i class="bi bi-chat-square-text input-icon"></i>
+                <input type="text" id="contactSubject" class="form-control-custom" placeholder="Project Collaboration"
+                  data-placeholder-en="Project Collaboration" data-placeholder-id="Kolaborasi Proyek">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-custom" data-lang-en="Message" data-lang-id="Pesan">Message</label>
+              <div class="textarea-icon-wrap">
+                <i class="bi bi-pencil-square input-icon"></i>
+                <textarea id="contactMessage" class="form-control-custom" rows="5" maxlength="1000"
+                  placeholder="Hi Ilyasa, I'd like to discuss a project with you..."
+                  data-placeholder-en="Hi Ilyasa, I'd like to discuss a project with you..."
+                  data-placeholder-id="Halo Ilyasa, saya ingin mendiskusikan sebuah proyek dengan Anda..."></textarea>
+              </div>
+              <div class="char-counter"><span id="charCount">0</span>/1000</div>
+            </div>
+
+            <button class="btn-submit" id="submitBtn" type="button">
+              <span class="btn-icon"><i class="bi bi-send-fill"></i></span>
+              <span class="btn-text" data-lang-en="Send Message" data-lang-id="Kirim Pesan">Send Message</span>
+              <div class="spinner"></div>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     FOOTER
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <footer>
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand -->
+        <div class="col-lg-4">
+          <div class="footer-brand">yasa<span>ramdh</span></div>
+          <p class="footer-tagline"
+            data-lang-en="Full Stack Developer dedicated to crafting modern, scalable web experiences with clean code and a futuristic approach."
+            data-lang-id="Full Stack Developer yang berdedikasi dalam membangun pengalaman web modern dan skalabel dengan kode bersih dan pendekatan futuristik.">
+            Full Stack Developer dedicated to crafting modern, scalable web experiences.
+          </p>
+          <div class="footer-socials">
+            <a href="mailto:yasaramdh@gmail.com" class="footer-social-btn"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.linkedin.com/in/ilyasa-ramadhany-a26942252/" target="_blank" class="footer-social-btn"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/yasaramdh_/" target="_blank" class="footer-social-btn"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://github.com/yasaramdh07" target="_blank" class="footer-social-btn"><i
+                class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <div class="footer-heading" data-lang-en="Navigation" data-lang-id="Navigasi">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="#home" data-lang-en="Home" data-lang-id="Beranda">Home</a></li>
+            <li><a href="#about" data-lang-en="About" data-lang-id="Tentang">About</a></li>
+            <li><a href="#skills" data-lang-en="Skills" data-lang-id="Keahlian">Skills</a></li>
+            <li><a href="#projects" data-lang-en="Projects" data-lang-id="Proyek">Projects</a></li>
+            <li><a href="#experience" data-lang-en="Experience" data-lang-id="Pengalaman">Experience</a></li>
+            <li><a href="#certificates" data-lang-en="Certificates" data-lang-id="Sertifikat">Certificates</a></li>
+            <li><a href="#contact" data-lang-en="Contact" data-lang-id="Kontak">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading" data-lang-en="Projects" data-lang-id="Proyek">Projects</div>
+          <ul class="footer-links">
+            <li><a href="https://rumusinfisika.netlify.app/" target="_blank">Rumusin!</a></li>
+            <li><a href="https://catetinkeuangan.netlify.app/" target="_blank">Catetin!</a></li>
+            <li><a href="https://kti-ilyasaramadhany.netlify.app/" target="_blank">IoT RFID Absemce</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3">
+          <div class="footer-heading" data-lang-en="Contact" data-lang-id="Kontak">Contact</div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="footer-contact-text"><a href="mailto:yasaramdh@gmail.com">yasaramdh@gmail.com</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-whatsapp"></i></div>
+            <div class="footer-contact-text"><a href="https://wa.me/6281283484747" target="_blank">+62 812-8348-474</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="footer-contact-text">Tangerang, Banten, Indonesia</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="footerYear"></span>
+          <span data-lang-en="Designed & Developed by" data-lang-id="Dirancang & Dikembangkan oleh">Designed & Developed
+            by</span>
+          <a href="https://www.linkedin.com/in/ilyasa-ramadhany-a26942252/" target="_blank">yasaramdh</a>.
+          <span data-lang-en="All rights reserved." data-lang-id="Hak cipta dilindungi.">All rights reserved.</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <a href="#home" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SCRIPTS
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+      <!--Google Ads-->
+  <amp-auto-ads type="adsense"
+      data-ad-client="ca-pub-4270350970153100">
+  </amp-auto-ads>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Profesional - Ilyasa Ramadhany</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111111;
+      --primary-light: #333333;
+      --accent: #111111;
+      --accent-hover: #333333;
+      --text-main: #404040;
+      --text-muted: #737373;
+      --bg-web: #f7f7f7;
+      --border: #e5e5e5;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg-web); color: var(--text-main); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+
+    /* Top Action Bar (Hanya di Web) */
+    .action-bar { max-width: 210mm; margin: 20px auto 0 auto; padding: 0 10px; display: flex; justify-content: space-between; align-items: center; }
+    
+    /* Sleek Language Toggle Switch */
+    .lang-switcher { display: inline-flex; background: var(--border); padding: 4px; border-radius: 8px; gap: 4px; }
+    .toggle-btn { background: transparent; border: none; padding: 6px 14px; font-size: 9pt; font-weight: 700; color: var(--text-muted); cursor: pointer; border-radius: 6px; transition: all 0.2s ease; }
+    .toggle-btn.active { background: white; color: var(--accent); box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
+    
+    /* Download Button */
+    .download-btn { background-color: var(--accent); color: white; border: none; padding: 12px 20px; font-size: 10pt; font-weight: 700; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2); transition: all 0.2s ease; }
+    .download-btn:hover { background-color: var(--accent-hover); transform: translateY(-1px); }
+    .download-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Container Halaman */
+    .page { width: 210mm; min-height: 297mm; margin: 20px auto 60px auto; background: white; padding: 18mm; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); border-radius: 12px; position: relative; }
+    
+    /* Header Styling */
+    header { display: grid; grid-template-columns: 1fr auto; gap: 20px; border-bottom: 2px solid var(--border); padding-bottom: 20px; margin-bottom: 20px; align-items: center; }
+    .header-left { display: flex; align-items: center; gap: 22px; }
+    .photo-frame { width: 95px; height: 95px; border-radius: 50%; overflow: hidden; border: 3px solid var(--accent); flex-shrink: 0; }
+    .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .header-text h1 { font-size: 24pt; font-weight: 800; color: var(--primary); letter-spacing: -1px; line-height: 1.1; }
+    .header-text p { font-size: 10.5pt; color: var(--accent); font-weight: 700; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .contact-info { text-align: right; font-size: 8.5pt; line-height: 1.6; color: var(--text-main); font-weight: 500; }
+    .contact-info a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .contact-info a:hover { color: var(--accent); text-decoration: underline; }
+
+    /* Section Global Styling */
+    .section { margin-bottom: 22px; break-inside: avoid; }
+    .section-title { font-size: 11pt; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; border-left: 4px solid var(--accent); padding-left: 10px; margin-bottom: 12px; }
+    .summary { font-size: 9.5pt; line-height: 1.6; text-align: justify; color: var(--text-main); }
+
+    /* Two Column Layout */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1.3fr; gap: 28px; }
+    
+    /* Subheadings */
+    h3 { font-size: 10pt; font-weight: 700; margin: 12px 0 6px 0; color: var(--primary-light); }
+    
+    /* Items Styling */
+    .item { margin-bottom: 14px; break-inside: avoid; }
+    .item-header { display: flex; justify-content: space-between; gap: 15px; font-weight: 700; font-size: 10pt; color: var(--primary); }
+    .item-date { font-size: 9pt; color: var(--text-muted); font-weight: 500; white-space: nowrap; }
+    .item-sub { color: var(--accent); font-weight: 600; font-size: 9pt; margin: 2px 0 4px 0; }
+    .item-desc { font-size: 9pt; line-height: 1.5; color: var(--text-main); }
+    .item-list, .bullet-list { margin: 4px 0 0 0; padding-left: 14px; font-size: 9pt; line-height: 1.5; color: var(--text-main); }
+    .item-list li, .bullet-list li { margin-bottom: 3px; }
+    .project-link { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: none; font-weight: 600; font-size: 8.5pt; margin-top: 4px; }
+    .project-link:hover { text-decoration: underline; }
+
+    /* Skill Tags */
+    .skills-container { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+    .skill-tag { background: #f0f0f0; padding: 4px 8px; border-radius: 6px; font-size: 8pt; font-weight: 600; color: var(--accent); border: 1px solid #dddddd; }
+    .mini-info { font-size: 9pt; line-height: 1.6; color: var(--text-main); }
+
+    /* SYSTEM TRANSLATION CONTROLLER (Sakti Dual Bahasa) */
+    body.lang-id .lang-en { display: none !important; }
+    body.lang-en .lang-id { display: none !important; }
+
+    /* RESPONSIVE DISPLAY (Mobile) */
+    @media screen and (max-width: 850px) {
+      .action-bar { max-width: 100%; padding: 10px 20px; flex-direction: column; gap: 12px; align-items: stretch; }
+      .lang-switcher { justify-content: center; }
+      .download-btn { justify-content: center; }
+      .page { width: 92%; margin: 10px auto; padding: 20px; height: auto; min-height: auto; }
+      header { grid-template-columns: 1fr; text-align: center; gap: 15px; }
+      .header-left { flex-direction: column; gap: 12px; }
+      .contact-info { text-align: center; }
+      .grid-2 { grid-template-columns: 1fr; gap: 20px; }
+    }
+
+    /* PRINT SETTINGS */
+    @media print {
+      @page { size: A4; margin: 15mm 12mm; }
+      .no-print { display: none !important; }
+      body { background: white; color: #000; }
+      .page { width: 100%; min-height: 100%; margin: 0; padding: 0; box-shadow: none; border-radius: 0; }
+      .skill-tag { background: #f0f0f0 !important; border: 1px solid #dddddd !important; color: #111111 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      a { text-decoration: none !important; color: #111111 !important; }
+      .project-link::after { content: " (" attr(href) ")"; font-size: 7.5pt; color: #737373; }
+    }
+  </style>
+</head>
+<body class="lang-id"> <!-- Default Bahasa Indonesia -->
+
+  <!-- Tombol Kontrol Aksi (Hanya Tampil di Browser Web) -->
+  <div class="action-bar no-print">
+    <!-- Switcher Bahasa -->
+    <div class="lang-switcher">
+      <button id="btn-id" class="toggle-btn active" onclick="switchLanguage('id')">ID</button>
+      <button id="btn-en" class="toggle-btn" onclick="switchLanguage('en')">EN</button>
+    </div>
+    
+    <!-- Tombol Download -->
+    <button class="download-btn" onclick="downloadCV()">
+      <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4M7 10l5 5 5-5M12 15V3"/></svg>
+      <span class="lang-id">Download PDF / Cetak CV</span>
+      <span class="lang-en">Download PDF / Print CV</span>
+    </button>
+  </div>
+
+  <!-- Konten Utama CV -->
+  <div class="page" id="cv-page">
+    <header>
+      <div class="header-left">
+        <div class="photo-frame">
+          <img src="cv.png" alt="Foto Ilyasa Ramadhany">
+        </div>
+        <div class="header-text">
+          <h1>ILYASA RAMADHANY</h1>
+          <p>Full Stack Developer | IoT Enthusiast | Youth Leader</p>
+        </div>
+      </div>
+      <div class="contact-info">
+        📍 <span class="lang-id">Tangerang, Indonesia</span><span class="lang-en">Tangerang, Indonesia</span><br>
+        📞 +62 812-8348-8474<br>
+        ✉️ <a href="mailto:yasaramdh07@gmail.com">yasaramdh07@gmail.com</a><br>
+        🌐 <a href="http://ilyasaramadhany.my.id/" target="_blank">ilyasaramadhany.my.id</a><br>
+        🔗 <a href="https://www.linkedin.com/in/ilyasa-ramadhany-a26942252/" target="_blank">linkedin.com/in/ilyasa-ramadhany-a26942252/</a>
+      </div>
+    </header>
+
+    <!-- Profil Profesional -->
+    <div class="section">
+      <div class="section-title">
+        <span class="lang-id">Profil Profesional</span>
+        <span class="lang-en">Professional Summary</span>
+      </div>
+      <p class="summary lang-id">
+        Full Stack Developer dengan minat mendalam pada Internet of Things (IoT) serta pembangunan arsitektur web modern menggunakan Laravel dan REST API. Pendiri Suracode, sebuah digital agency yang berfokus pada penyediaan solusi digital custom berkualitas tinggi untuk korporasi dan UMKM. Memiliki rekam jejak kepemimpinan kuat di tingkat regional, berpengalaman mengoordinasikan manajemen event skala besar lintas sektoral, serta aktif berkontribusi sebagai pembicara publik guna mengedukasi literasi teknologi dan manajemen organisasi bagi generasi muda.
+      </p>
+      <p class="summary lang-en">
+        Full Stack Developer with a deep interest in the Internet of Things (IoT) and modern web architecture development using Laravel and REST APIs. Founder of Suracode, a digital agency focusing on delivering high-quality custom digital solutions for corporations and MSMEs. Proven track record of strong leadership at the regional level, experienced in coordinating large-scale cross-sectoral event management, and actively contributing as a public speaker to educate youth on technology literacy and organizational management.
+      </p>
+    </div>
+
+    <div class="grid-2">
+      <!-- KOLOM KIRI -->
+      <div>
+        <!-- Keahlian Teknis -->
+        <div class="section">
+          <div class="section-title">
+            <span class="lang-id">Keahlian Teknis</span>
+            <span class="lang-en">Technical Skills</span>
+          </div>
+          <h3>Web Development</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Laravel</span><span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript (ES6+)</span><span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST API</span><span class="skill-tag">Bootstrap 5</span>
+            <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Git/GitHub</span>
+          </div>
+          <h3>IoT &amp; Hardware (R&amp;D)</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Arduino IDE</span><span class="skill-tag">ESP32 / ESP8266</span>
+            <span class="skill-tag">RFID Systems</span><span class="skill-tag">Sensor Integrations</span>
+            <span class="skill-tag">Circuit Design</span>
+          </div>
+          <h3>Tools &amp; Platform</h3>
+          <div class="skills-container">
+            <span class="skill-tag">VS Code</span><span class="skill-tag">Postman</span>
+            <span class="skill-tag">Figma (UI/UX)</span><span class="skill-tag">Netlify</span>
+            <span class="skill-tag">Cloud Storage</span><span class="skill-tag">
+          </div>
+          <h3>Soft Skills</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Strategic Leadership</span><span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Conflict Management</span><span class="skill-tag">Event Management</span>
+          </div>
+        </div>
+
+        <!-- Pendidikan & Sertifikasi -->
+        <div class="section">
+          <div class="section-title">
+            <span class="lang-id">Pendidikan &amp; Sertifikasi</span>
+            <span class="lang-en">Education &amp; Certifications</span>
+          </div>
+          <div class="item">
+            <div class="item-header"><span>Universitas Pamulang</span><span class="item-date">2026 - <span class="lang-id">Sekarang</span><span class="lang-en">Present</span></span></div>
+            <div class="item-sub">
+              <span class="lang-id">Teknik Informatika</span>
+              <span class="lang-en">Informatics Engineering</span>
+            </div>
+            <p class="item-desc lang-id">Mahasiswa aktif Program Studi Teknik Informatika.</p>
+            <p class="item-desc lang-en">Current student in the Informatics Engineering program.</p>
+          </div>
+          <div class="item">
+            <div class="item-header"><span>MAS YABIKA</span><span class="item-date">2022 - 2025</span></div>
+            <div class="item-sub">
+              <span class="lang-id">MIPA (Sains &amp; Teknologi)</span>
+              <span class="lang-en">Natural Sciences &amp; Technology</span>
+            </div>
+            <p class="item-desc lang-id">Mempertahankan prestasi akademik sebagai Juara Umum Kelas dari Semester 1 hingga 5 berturut-turut atas penguasaan materi sains dan matematika.</p>
+            <p class="item-desc lang-en">Maintained academic excellence as the overall Class Champion from Semester 1 to 5 consecutively for outstanding performance in science and mathematics.</p>
+          </div>
+          <div class="item">
+            <div class="item-header"><span>Dunia Coding Academy</span><span class="item-date">2023</span></div>
+            <div class="item-sub">Full Stack Web Developer</div>
+            <p class="item-desc lang-id">Sertifikasi kompetensi: menguasai arsitektur MVC, autentikasi berlapis, manajemen database relasional, dan pembuatan sistem dashboard admin.</p>
+            <p class="item-desc lang-en">Competency certification: mastered MVC architecture, multi-layered authentication, relational database management, and administrative dashboard construction.</p>
+          </div>
+        </div>
+
+        <!-- Bahasa -->
+        <div class="section">
+          <div class="section-title">
+            <span class="lang-id">Bahasa</span>
+            <span class="lang-en">Languages</span>
+          </div>
+          <p class="mini-info lang-id">
+            <strong>Indonesia:</strong> Native / Bilingual<br>
+            <strong>English:</strong> Intermediate (Professional Working)
+          </p>
+          <p class="mini-info lang-en">
+            <strong>Indonesian:</strong> Native / Bilingual<br>
+            <strong>English:</strong> Intermediate (Professional Working)
+          </p>
+        </div>
+      </div>
+
+      <!-- KOLOM KANAN -->
+      <div>
+        <!-- Pengalaman & Organisasi -->
+        <div class="section">
+          <div class="section-title">
+            <span class="lang-id">Pengalaman &amp; Organisasi</span>
+            <span class="lang-en">Experience &amp; Leadership</span>
+          </div>
+          
+          <!-- Suracode -->
+          <div class="item">
+            <div class="item-header"><span>Founder &amp; Lead Developer</span><span class="item-date">2025 - <span class="lang-id">Sekarang</span><span class="lang-en">Present</span></span></div>
+            <div class="item-sub">Suracode — Web Development Agency</div>
+            <ul class="item-list lang-id">
+              <li>Mendirikan agensi teknologi untuk membantu digitalisasi UMKM dan profil perusahaan (*company profile*).</li>
+              <li>Mengelola siklus penuh: perancangan UI/UX via Figma, penulisan kode bersih (*clean code*), hingga proses *deployment* server.</li>
+              <li>Menghasilkan solusi web kustom berbasis arsitektur monolitik maupun API-first stack untuk efisiensi bisnis klien.</li>
+            </ul>
+            <ul class="item-list lang-en">
+              <li>Founded a technology agency to accelerate the digital transformation of MSMEs and corporate company profiles.</li>
+              <li>Managed full-cycle operations: UI/UX prototyping via Figma, clean code development, up to production server deployment.</li>
+              <li>Delivered tailored web solutions using monolithic and API-first architectures to drive operational efficiency for clients.</li>
+            </ul>
+          </div>
+
+          <!-- OSKATA FEST -->
+          <div class="item">
+            <div class="item-header"><span>Event Coordinator</span><span class="item-date">Feb 2026</span></div>
+            <div class="item-sub">OSKATA FEST 2026 (Forum OSIS Kab. Tangerang)</div>
+            <ul class="item-list lang-id">
+              <li>Memimpin manajemen kepanitiaan gabungan yang melibatkan 50+ pengurus OSIS berprestasi dari berbagai sekolah di tingkat regional.</li>
+              <li>Mengoordinasikan alur kerja lintas divisi guna menyusun timeline acara yang presisi dan meminimalkan risiko kesalahan operasional.</li>
+              <li>Mengarahkan jalannya festival budaya daerah secara kondusif dan terstruktur berbasis Standard Operating Procedure (SOP).</li>
+            </ul>
+            <ul class="item-list lang-en">
+              <li>Led a joint committee consisting of over 50 high-achieving student council leaders from various regional high schools.</li>
+              <li>Coordinated cross-divisional workflows to establish precise schedules and minimize on-site operational risks.</li>
+              <li>Directed a large-scale regional cultural festival smoothly based on strict Standard Operating Procedures (SOP).</li>
+            </ul>
+          </div>
+
+          <!-- Ketua OSIS -->
+          <div class="item">
+            <div class="item-header"><span>Ketua OSIS</span><span class="item-date">2023 - 2025</span></div>
+            <div class="item-sub">MAS YABIKA (<span class="lang-id">2 Periode Jabatan</span><span class="lang-en">2 Terms Elected</span>)</div>
+            <ul class="item-list lang-id">
+              <li>Memimpin organisasi selama dua periode, merancang program kerja strategis berskala sekolah, dan mengelola anggaran internal.</li>
+              <li>Menginisiasi digitalisasi administrasi organisasi lewat penerapan sistem arsip berbasis cloud, memangkas birokrasi proposal konvensional.</li>
+            </ul>
+            <ul class="item-list lang-en">
+              <li>Elected to lead the student council for two consecutive terms, executing strategic school-wide programs and allocating internal budgets.</li>
+              <li>Initiated digital transformation within administrative structures by implementing cloud-based archiving systems, cutting processing bureaucracy.</li>
+            </ul>
+          </div>
+
+          <!-- FOKT -->
+          <div class="item">
+            <div class="item-header"><span>Coordinator — Department</span><span class="item-date">2023 — 2024</span></div>
+            <div class="item-sub">Forum OSIS Kabupaten Tangerang (FOKT)</div>
+            <p class="item-desc">Responsible for regional coordination and program execution across schools in Tangerang.</p>
+          </div>
+        </div>
+
+        <!-- Proyek Unggulan -->
+        <div class="section">
+          <div class="section-title">
+            <span class="lang-id">Proyek Unggulan</span>
+            <span class="lang-en">Featured Projects</span>
+          </div>
+          
+          <!-- Rumusin -->
+          <div class="item">
+            <div class="item-header"><span>Rumusin (EdTech Platform)</span><span class="item-date">2026</span></div>
+            <div class="item-sub">Founder &amp; Lead Developer</div>
+            <ul class="item-list lang-id">
+              <li>Merancang aplikasi kalkulator fisika digital guna membantu pelajar mengkalkulasi rumus mekanika dan termodinamika secara instan.</li>
+              <li>Mengembangkan algoritma kalkulasi menggunakan JavaScript (ES6+), berhasil diliput oleh media nasional Netralnews.</li>
+            </ul>
+            <ul class="item-list lang-en">
+              <li>Designed a digital physics calculator web app to help high school students process mechanics and thermodynamics equations instantly.</li>
+              <li>Engineered custom core logic in JavaScript (ES6+), gaining media coverage from national news outlet Netralnews.</li>
+            </ul>
+          </div>
+
+          <!-- RFID -->
+          <div class="item">
+            <div class="item-header"><span>RFID Attendance System</span><span class="item-date">2025</span></div>
+            <div class="item-sub">IoT Developer</div>
+            <ul class="item-list lang-id">
+              <li>Mengembangkan sistem absensi terintegrasi berbasis mikrokontroler NodeMCU (ESP8266), sensor RFID RC522, dan display LCD I2C.</li>
+              <li>Membangun pipeline data real-time menggunakan protokol HTTP POST untuk mengirim data kartu UID ke dashboard web berbasis Laravel.</li>
+              <li>Mengoptimalkan log pada MySQL guna mengeliminasi kecurangan absensi manual.</li>
+            </ul>
+            <ul class="item-list lang-en">
+              <li>Developed an embedded attendance tracking hardware system utilizing NodeMCU (ESP8266), RC522 RFID readers, and I2C LCD displays.</li>
+              <li>Engineered a real-time data pipeline using HTTP POST protocols to securely transfer card UID strings to a custom Laravel backend.</li>
+              <li>Optimized complex MySQL logging procedures to effectively eliminate payroll and attendance data manipulation.</li>
+            </ul>
+            <a href="https://kti-ilyasaramadhany.netlify.app/" target="_blank" class="project-link">🌐 kti-ilyasaramadhany.netlify.app</a>
+          </div>
+        </div>
+
+        <!-- Kontribusi & Pembicara -->
+        <div class="section">
+          <div class="section-title">
+            <span class="lang-id">Pembicara Publik &amp; Kontribusi</span>
+            <span class="lang-en">Public Speaking &amp; Engagements</span>
+          </div>
+          <ul class="bullet-list lang-id">
+            <li><strong>MAN 2 Kab. Tangerang:</strong> Pemateri Latihan Kepemimpinan, fokus pada manajemen konflik dan taktik komunikasi organisasi.</li>
+            <li><strong>MAN 1 Tangerang:</strong> Pembicara Utama seminar "Manajemen Konflik dan Dinamika Tim Internal Organisasi".</li>
+            <li><strong>SMAS Permata Insani:</strong> Guest Speaker bertema Kepemimpinan Strategis dan Eksekusi Program Kerja Berbasis Agile.</li>
+            <li><strong>MAS YABIKA:</strong> Mentor Rutin mingguan ekskul Multimedia bidang rekayasa web dasar.</li>
+          </ul>
+          <ul class="bullet-list lang-en">
+            <li><strong>MAN 2 Kab. Tangerang:</strong> Leadership Trainer, specialized in youth conflict resolution and institutional communication.</li>
+            <li><strong>MAN 1 Tangerang:</strong> Keynote Speaker on "Conflict Management and Group Dynamics within Internal Organizations."</li>
+            <li><strong>SMAS Permata Insani:</strong> Guest Speaker discussing Strategic Leadership styles and Agile Framework execution in high schools.</li>
+            <li><strong>MAS YABIKA:</strong> Weekly Engineering Mentor conducting foundational web development workshops for the Multimedia club.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Fungsi Switch Bahasa Terintegrasi
+    function switchLanguage(lang) {
+      // Hapus kelas aktif di body dan pasang yang baru
+      document.body.className = '';
+      document.body.classList.add('lang-' + lang);
+      
+      // Update status visual tombol toggle
+      document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+
+    // Fungsi Trigger Cetak PDF Browser
+    function downloadCV() {
+      window.print();
+    }
+  </script>
+</body>
+</html>
